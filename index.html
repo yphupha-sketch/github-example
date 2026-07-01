@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tags Demo</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML Tags Demo Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#text">Text</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#media">Links &amp; Media</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="text">
+      <h2>Text Content Tags</h2>
+
+      <h3>Headings</h3>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+
+      <h3>Paragraphs &amp; Inline</h3>
+      <p>This is a paragraph with <strong>strong</strong>, <em>emphasized</em>, <small>small</small>, and <code>inline code</code> text.</p>
+      <p>Line break here:<br>Text after the break.</p>
+
+      <hr>
+
+      <blockquote>
+        <p>This is a blockquote. It is used for quoted content from another source.</p>
+      </blockquote>
+
+      <pre>Preformatted text
+  preserves spaces
+    and line breaks.</pre>
+    </section>
+
+    <section id="lists">
+      <h2>List Tags</h2>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Bullet item</li>
+        <li>Another item</li>
+        <li>Yet another</li>
+      </ul>
+
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+    </section>
+
+    <section id="media">
+      <h2>Links, Images &amp; Media</h2>
+
+      <h3>Links</h3>
+      <p>Visit <a href="https://developer.mozilla.org">MDN Web Docs</a> for more information.</p>
+
+      <h3>Images</h3>
+      <figure>
+        <img src="https://placehold.co/600x200" alt="Placeholder image showing a 600 by 200 rectangle">
+        <figcaption>A placeholder image with a caption.</figcaption>
+      </figure>
+
+      <h3>Audio</h3>
+      <audio controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video</h3>
+      <video controls width="400" src="https://www.w3schools.com/html/mov_bbb.mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <section id="table">
+      <h2>Table Tags</h2>
+
+      <table>
+        <caption>Sample Student Grades</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>Math</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Science</td>
+            <td>B+</td>
+          </tr>
+          <tr>
+            <td>Carol</td>
+            <td>History</td>
+            <td>A-</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>Form Tags</h2>
+
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="">-- Select --</option>
+            <option value="th">Thailand</option>
+            <option value="jp">Japan</option>
+            <option value="us">United States</option>
+          </select>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Aside</h2>
+      <p>This is an <strong>&lt;aside&gt;</strong> element, used for side content or notes related to the main content.</p>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p><small>&copy; 2026 HTML Tags Demo. Built for learning.</small></p>
+  </footer>
+
+</body>
+</html>
