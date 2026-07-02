@@ -158,6 +158,11 @@
       </form>
     </section>
 
+    <section id="games">
+      <h2>Game Database</h2>
+      <div id="game-list"></div>
+    </section>
+
     <aside>
       <h2>Aside</h2>
       <p>This is an <strong>&lt;aside&gt;</strong> element, used for side content or notes related to the main content.</p>
@@ -168,6 +173,23 @@
   <footer>
     <p><small>&copy; 2026 HTML Tags Demo. Built for learning.</small></p>
   </footer>
+
+  <script src="My-objext.js"></script>
+  <script>
+    const gameList = document.getElementById('game-list');
+    gamedatabase.forEach(game => {
+      const card = document.createElement('div');
+      card.style.cssText = 'display:inline-block; margin:10px; border:1px solid #ccc; border-radius:8px; overflow:hidden; text-align:center; vertical-align:top;';
+      card.innerHTML = `
+        <img src="${game.image}" alt="${game.name}" style="width:300px; height:140px; object-fit:cover; display:block;">
+        <div style="padding:10px;">
+          <strong>${game.name}</strong><br>
+          <small>${game.genre.join(', ')}</small>
+        </div>
+      `;
+      gameList.appendChild(card);
+    });
+  </script>
 
 </body>
 </html>
