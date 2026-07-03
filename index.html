@@ -181,7 +181,9 @@
       const card = document.createElement('div');
       card.style.cssText = 'display:inline-block; margin:10px; border:1px solid #ccc; border-radius:8px; overflow:hidden; text-align:center; vertical-align:top;';
       card.innerHTML = `
-        <img src="${game.image}" alt="${game.name}" style="width:300px; height:140px; object-fit:cover; display:block;">
+        <a href="${game.url}" target="_blank">
+          <img src="${game.image}" alt="${game.name}" style="width:300px; height:140px; object-fit:cover; display:block;">
+        </a>
         <div style="padding:10px;">
           <strong>${game.name}</strong><br>
           <small>${game.genre.join(', ')}</small>
